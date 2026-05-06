@@ -37,9 +37,10 @@ export default function HowItWorks() {
     <section
       id="how-it-works"
       style={{
+        display: 'block',
         background: 'transparent',
-        paddingTop: '80px',
-        paddingBottom: '80px',
+        paddingTop: '60px',
+        paddingBottom: '60px',
         paddingLeft: 'var(--section-padding-x)',
         paddingRight: 'var(--section-padding-x)',
       }}
@@ -65,18 +66,21 @@ export default function HowItWorks() {
         .step-inner {
           position: relative;
           z-index: 1;
-          padding-top: 0;
+          padding: 32px 24px;
+          border-radius: 16px;
+          background: #FFFFFF;
+          box-shadow: 0 4px 24px rgba(27,36,40,0.08);
           border-top: 2px solid transparent;
-          transition: border-color 200ms ease, padding-top 200ms ease;
+          transition: border-color 200ms ease, box-shadow 200ms ease;
         }
         .step-inner:hover {
           border-top-color: var(--color-blue);
-          padding-top: 16px;
+          box-shadow: 0 8px 32px rgba(27,36,40,0.12);
         }
       `}} />
 
         <div className="container">
-          <p className="reveal section-label" style={{ fontFamily: 'var(--font-primary)', fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', marginBottom: '20px', display: 'block' }}>
+          <p className="reveal section-label" style={{ fontFamily: 'var(--font-primary)', fontSize: '0.8125rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-blue)', marginBottom: '20px', display: 'block' }}>
             How It Works
           </p>
           <h2
@@ -85,7 +89,7 @@ export default function HowItWorks() {
               fontFamily: 'var(--font-display)',
               fontSize: 'clamp(2.25rem, 4vw, 3.25rem)',
               fontWeight: 700,
-              color: 'var(--color-white)',
+              color: 'var(--color-navy)',
               marginBottom: '1.5rem',
               maxWidth: '540px',
               lineHeight: 1.1,
@@ -129,9 +133,9 @@ export default function HowItWorks() {
                     fontSize: '3.5rem',
                     fontWeight: 700,
                     lineHeight: 1,
-                    color: 'var(--color-blue-light)',
+                    color: 'var(--color-blue)',
                     opacity: 1,
-                    textShadow: '0 0 60px rgba(130,206,244,0.5)',
+                    textShadow: '0 0 60px rgba(0,146,203,0.2)',
                     marginBottom: '12px',
                     userSelect: 'none',
                   }}
@@ -143,7 +147,7 @@ export default function HowItWorks() {
                     fontFamily: 'var(--font-display)',
                     fontSize: '1.1rem',
                     fontWeight: 700,
-                    color: 'var(--color-white)',
+                    color: 'var(--color-navy)',
                     marginBottom: '8px',
                     lineHeight: 1.3,
                   }}
@@ -154,7 +158,7 @@ export default function HowItWorks() {
                   style={{
                     fontFamily: 'var(--font-primary)',
                     fontSize: '1.0625rem',
-                    color: 'rgba(255,255,255,0.55)',
+                    color: 'rgba(27,36,40,0.7)',
                     lineHeight: 1.75,
                   }}
                 >

@@ -31,9 +31,10 @@ export default function Services() {
   return (
     <section
       style={{
+        display: 'block',
         background: 'transparent',
-        paddingTop: '80px',
-        paddingBottom: '80px',
+        paddingTop: '60px',
+        paddingBottom: '60px',
         paddingLeft: 'var(--section-padding-x)',
         paddingRight: 'var(--section-padding-x)',
       }}
@@ -45,13 +46,13 @@ export default function Services() {
           border: none;
           border-top: 3px solid var(--color-blue);
           padding: 40px 36px;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.35), 0 4px 16px rgba(0,0,0,0.15);
+          box-shadow: 0 4px 24px rgba(27,36,40,0.08), 0 1px 6px rgba(27,36,40,0.05);
           transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
           cursor: default;
         }
         .service-card:hover {
           transform: translateY(-8px);
-          box-shadow: 0 32px 80px rgba(0,0,0,0.45), 0 8px 24px rgba(0,146,203,0.15);
+          box-shadow: 0 16px 48px rgba(27,36,40,0.12), 0 4px 16px rgba(0,146,203,0.1);
           border-top-color: var(--color-blue);
         }
         .services-grid {
@@ -68,7 +69,7 @@ export default function Services() {
       `}} />
 
       <div className="container">
-        <p className="reveal section-label" style={{ fontFamily: 'var(--font-primary)', fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-blue)', marginBottom: '20px', display: 'block' }}>
+        <p className="reveal section-label" style={{ fontFamily: 'var(--font-primary)', fontSize: '0.8125rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-blue)', marginBottom: '20px', display: 'block' }}>
           Our Services
         </p>
         <h2
@@ -77,7 +78,7 @@ export default function Services() {
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(2.25rem, 4vw, 3.25rem)',
             fontWeight: 700,
-            color: 'var(--color-white)',
+            color: 'var(--color-navy)',
             background: 'none',
             marginBottom: '0.75rem',
             maxWidth: '540px',
@@ -92,7 +93,7 @@ export default function Services() {
           style={{
             fontFamily: 'var(--font-primary)',
             fontSize: '1.0625rem',
-            color: 'rgba(255,255,255,0.6)',
+            color: 'rgba(27,36,40,0.7)',
             maxWidth: '540px',
             lineHeight: 1.75,
             marginBottom: '3rem',
@@ -111,7 +112,7 @@ export default function Services() {
               <span
                 style={{
                   fontFamily: 'var(--font-primary)',
-                  fontSize: '0.6875rem',
+                  fontSize: '0.8125rem',
                   fontWeight: 700,
                   letterSpacing: '0.12em',
                   color: 'var(--color-blue)',
@@ -137,7 +138,7 @@ export default function Services() {
                 style={{
                   fontFamily: 'var(--font-primary)',
                   fontSize: '0.9375rem',
-                  color: 'rgba(27,36,40,0.65)',
+                  color: 'rgba(27,36,40,0.7)',
                   lineHeight: 1.75,
                 }}
               >

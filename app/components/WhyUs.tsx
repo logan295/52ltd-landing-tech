@@ -6,13 +6,13 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 const differentiators = [
   {
     pill: 'PASSIVE CANDIDATES',
-    title: 'Hard-to-Find Talent',
-    body: 'Access to passive candidates not actively job searching. Deep networks in UX, product, and creative disciplines.',
+    title: 'Senior Creative Talent',
+    body: 'Access to Art Directors, Creative Directors, and Brand Designers who are selectively open to the right opportunity. Not job board applicants.',
   },
   {
     pill: 'VALUES-FIRST',
-    title: 'Cultural Alignment',
-    body: 'We assess fit, not just skills. Behavioral interviews, soft skills evaluation, and values alignment built into every search.',
+    title: 'Brand Fit First',
+    body: 'We assess aesthetic sensibility, creative process, and team dynamics. The right designer has to feel right, not just look right on paper.',
   },
   {
     pill: '5–7 DAYS',
@@ -46,13 +46,13 @@ function WhyCard({ pill, title, body }: { pill: string; title: string; body: str
       style={{
         position: 'relative',
         overflow: 'hidden',
-        background: hovered ? 'rgba(0,146,203,0.06)' : 'rgba(255,255,255,0.03)',
-        border: `1px solid ${hovered ? 'rgba(0,146,203,0.3)' : 'rgba(255,255,255,0.08)'}`,
+        background: '#FFFFFF',
+        border: `1px solid ${hovered ? 'rgba(0,146,203,0.3)' : 'rgba(27,36,40,0.08)'}`,
         borderRadius: '20px',
         padding: '40px 36px',
         transition: 'all 250ms ease',
         transform: hovered ? 'translateY(-3px)' : 'translateY(0)',
-        boxShadow: hovered ? '0 20px 60px rgba(0,0,0,0.3)' : 'none',
+        boxShadow: hovered ? '0 20px 60px rgba(27,36,40,0.12)' : '0 4px 24px rgba(27,36,40,0.08)',
       }}
     >
       {/* Corner gradient accent */}
@@ -78,7 +78,7 @@ function WhyCard({ pill, title, body }: { pill: string; title: string; body: str
           background: 'rgba(0,146,203,0.15)',
           border: '1px solid rgba(0,146,203,0.35)',
           color: 'var(--color-blue)',
-          fontSize: '0.6875rem',
+          fontSize: '0.8125rem',
           fontWeight: 700,
           letterSpacing: '0.1em',
           padding: '4px 12px',
@@ -95,7 +95,7 @@ function WhyCard({ pill, title, body }: { pill: string; title: string; body: str
           fontFamily: 'var(--font-display)',
           fontSize: '1.375rem',
           fontWeight: 700,
-          color: 'var(--color-white)',
+          color: 'var(--color-navy)',
           marginBottom: '12px',
           lineHeight: 1.3,
           letterSpacing: '-0.01em',
@@ -107,7 +107,7 @@ function WhyCard({ pill, title, body }: { pill: string; title: string; body: str
         style={{
           fontFamily: 'var(--font-primary)',
           fontSize: '0.9375rem',
-          color: 'rgba(255,255,255,0.6)',
+          color: 'rgba(27,36,40,0.7)',
           lineHeight: 1.75,
         }}
       >
@@ -122,8 +122,7 @@ export default function WhyUs() {
 
   return (
     <section
-      className="section-dark"
-      style={{ paddingTop: '80px', paddingBottom: '80px', background: 'transparent' }}
+      style={{ display: 'block', paddingTop: '60px', paddingBottom: '60px', background: 'transparent' }}
     >
       <style dangerouslySetInnerHTML={{ __html: `
         .why-intro {
@@ -157,11 +156,11 @@ export default function WhyUs() {
               className="reveal"
               style={{
                 fontFamily: 'var(--font-primary)',
-                fontSize: '0.6875rem',
+                fontSize: '0.8125rem',
                 fontWeight: 700,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.6)',
+                color: 'var(--color-blue)',
                 marginBottom: '20px',
                 display: 'block',
               }}
@@ -174,13 +173,13 @@ export default function WhyUs() {
                 fontFamily: 'var(--font-display)',
                 fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
                 fontWeight: 700,
-                color: 'var(--color-white)',
+                color: 'var(--color-navy)',
                 lineHeight: 1.1,
                 letterSpacing: '-0.02em',
                 margin: 0,
               }}
             >
-              Boutique by design. Senior-led by default.
+              Built for brands that take design<br />seriously.
             </h2>
           </div>
           <p
@@ -188,13 +187,13 @@ export default function WhyUs() {
             style={{
               fontFamily: 'var(--font-primary)',
               fontSize: '1.0625rem',
-              color: 'rgba(255,255,255,0.6)',
+              color: 'rgba(27,36,40,0.7)',
               lineHeight: 1.75,
               paddingTop: '16px',
               margin: 0,
             }}
           >
-            We built 52 Limited to be the agency we always wished existed. Senior recruiters on every search. Real relationships. Quality over volume.
+            We built 52 Limited for the companies that know design is a competitive advantage. Our recruiters understand brand craft, creative culture, and what makes a design team exceptional.
           </p>
         </div>
 

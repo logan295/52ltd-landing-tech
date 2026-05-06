@@ -6,11 +6,12 @@ import HowItWorks from './components/HowItWorks'
 import WhyUs from './components/WhyUs'
 import Services from './components/Services'
 import GetStarted from './components/GetStarted'
+import BookAMeeting from './components/BookAMeeting'
 import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ display: 'flex', flexDirection: 'column', gap: 0, margin: 0, padding: 0 }}>
       <Nav />
       <Hero />
       <PainPoints />
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyUs />
       <Services />
       <GetStarted />
+      <BookAMeeting />
       <LogoBar />
       <Footer />
     </main>

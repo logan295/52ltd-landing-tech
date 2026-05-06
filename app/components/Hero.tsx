@@ -3,16 +3,16 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const roles = [
-  'UX Researcher',
-  'UX Engineer',
-  'Product Designer',
-  'UX Lead',
+  'Art Director',
+  'Brand Designer',
+  'Creative Director',
+  'Motion Designer',
+  'Graphic Designer',
+  'Visual Designer',
+  'Design Strategist',
   'Content Designer',
-  'UX/UI Designer',
-  'UX Strategist',
-  'Interaction Designer',
-  'Design Systems Lead',
-  'Product Manager',
+  'Illustrator',
+  'Production Designer',
 ]
 
 const stats = [
@@ -27,7 +27,6 @@ export default function Hero() {
 
   return (
     <section
-      className="section-dark"
       style={{
         position: 'relative',
         overflow: 'hidden',
@@ -35,70 +34,33 @@ export default function Hero() {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
-        paddingTop: 'calc(var(--nav-height) + 20px)',
-        paddingBottom: '80px',
-        paddingLeft: 'var(--section-padding-x)',
-        paddingRight: 'var(--section-padding-x)',
+        paddingTop: 'calc(var(--nav-height) + 40px)',
+        paddingBottom: '20px',
       }}
     >
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        background: 'radial-gradient(ellipse at 40% 50%, rgba(27,36,40,0.85) 0%, rgba(27,36,40,0.4) 60%, transparent 100%)',
-        zIndex: 0,
-        pointerEvents: 'none',
-      }} />
-      <div style={{ position: 'relative', zIndex: 1, width: '100%' }}>
-      {/* Decorative background gradients */}
-      <div
-        aria-hidden
-        style={{
-          position: 'absolute',
-          bottom: '-200px',
-          right: '-200px',
-          width: '800px',
-          height: '800px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(0,146,203,0.12) 0%, transparent 70%)',
-          pointerEvents: 'none',
-        }}
-      />
-      <div
-        aria-hidden
-        style={{
-          position: 'absolute',
-          top: '-100px',
-          left: '-200px',
-          width: '800px',
-          height: '800px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(130,206,244,0.06) 0%, transparent 70%)',
-          pointerEvents: 'none',
-        }}
-      />
-
-      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1, width: '100%' }}>
         <div style={{ maxWidth: '820px' }}>
           <p
             className="reveal section-label"
-            style={{ fontFamily: 'var(--font-primary)', fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', marginBottom: '20px', display: 'block' }}
+            style={{ fontFamily: 'var(--font-primary)', fontSize: '0.875rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-blue)', marginBottom: '20px', display: 'block' }}
           >
-            Boutique UX &amp; Product Talent
+            Brand &amp; Creative Talent
           </p>
 
           <h1
             className="reveal"
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(3rem, 7vw, 5.5rem)',
+              fontSize: 'clamp(2.75rem, 5.5vw, 4.5rem)',
               fontWeight: 700,
               lineHeight: 1.05,
-              color: 'var(--color-white)',
+              color: 'var(--color-navy)',
               marginBottom: '1.75rem',
+              maxWidth: '760px',
             }}
           >
-            The right UX hire,<br />
-            <span style={{ color: 'var(--color-blue-light)', textShadow: '0 0 80px rgba(0,146,203,0.3)' }}>without the search.</span>
+            Build the design team<br />
+            <span style={{ color: '#1B2428' }}>your brand deserves.</span>
           </h1>
 
           <p
@@ -107,12 +69,12 @@ export default function Hero() {
               fontFamily: 'var(--font-primary)',
               fontSize: '1.25rem',
               lineHeight: 1.75,
-              color: 'rgba(255,255,255,0.75)',
+              color: 'rgba(27,36,40,0.7)',
               marginBottom: '32px',
-              maxWidth: '560px',
+              maxWidth: '520px',
             }}
           >
-            52 Limited connects growing companies with senior UX professionals, vetted by recruiters who actually understand the craft.
+            52 Limited places Art Directors, Brand Designers, and Creative Directors with companies building world-class in-house creative teams. Boutique. Senior-led. Nationally.
           </p>
 
           <div
@@ -131,9 +93,9 @@ export default function Hero() {
                   height: '36px',
                   padding: '0 18px',
                   borderRadius: 'var(--radius-full)',
-                  background: 'rgba(0,146,203,0.12)',
-                  border: '1px solid rgba(0,146,203,0.3)',
-                  color: 'var(--color-blue-light)',
+                  background: 'rgba(0,146,203,0.08)',
+                  border: '1px solid rgba(0,146,203,0.2)',
+                  color: 'var(--color-blue)',
                   letterSpacing: '0.01em',
                 }}
               >
@@ -146,7 +108,7 @@ export default function Hero() {
             <a
               href="#get-started"
               className="btn btn-primary"
-              style={{ height: '56px', padding: '0 40px', fontSize: '0.875rem', borderRadius: '6px', animation: 'pulse-glow 3s ease-in-out infinite' }}
+              style={{ height: '56px', padding: '0 40px', fontSize: '0.875rem', borderRadius: '6px' }}
             >
               Book a Call
             </a>
@@ -160,9 +122,9 @@ export default function Hero() {
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
                 borderRadius: '6px',
-                border: '1px solid rgba(255,255,255,0.25)',
-                color: 'rgba(255,255,255,0.85)',
-                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(27,36,40,0.25)',
+                color: 'rgba(27,36,40,0.8)',
+                background: 'rgba(27,36,40,0.04)',
                 backdropFilter: 'blur(8px)',
                 cursor: 'pointer',
                 transition: 'all 300ms ease',
@@ -172,15 +134,15 @@ export default function Hero() {
                 justifyContent: 'center',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = 'rgba(255,255,255,0.08)'
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)'
-                e.currentTarget.style.color = '#FFFFFF'
+                e.currentTarget.style.background = 'rgba(27,36,40,0.08)'
+                e.currentTarget.style.borderColor = 'rgba(27,36,40,0.5)'
+                e.currentTarget.style.color = '#1B2428'
                 e.currentTarget.style.transform = 'translateY(-2px)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.background = 'rgba(255,255,255,0.04)'
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'
-                e.currentTarget.style.color = 'rgba(255,255,255,0.85)'
+                e.currentTarget.style.background = 'rgba(27,36,40,0.04)'
+                e.currentTarget.style.borderColor = 'rgba(27,36,40,0.25)'
+                e.currentTarget.style.color = 'rgba(27,36,40,0.8)'
                 e.currentTarget.style.transform = 'translateY(0)'
               }}
             >
@@ -189,30 +151,24 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Divider above stats */}
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', marginBottom: '2rem' }} />
-
         <div
           className="reveal reveal-stagger"
           style={{
-            marginTop: '40px',
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+            gridTemplateColumns: 'repeat(4, 1fr)',
             gap: '0',
-            background: 'rgba(255,255,255,0.05)',
-            borderRadius: '16px',
-            overflow: 'hidden',
-            border: '1px solid rgba(255,255,255,0.08)',
-            padding: '32px 40px',
+            marginTop: '48px',
+            paddingTop: '32px',
+            borderTop: '1px solid rgba(27,36,40,0.1)',
           }}
         >
           {stats.map((stat, i) => (
             <div
               key={stat.value}
               style={{
-                paddingRight: i < stats.length - 1 ? '2rem' : '0',
-                borderRight: i < stats.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none',
-                paddingLeft: i > 0 ? '2rem' : '0',
+                paddingLeft: i === 0 ? '0' : '32px',
+                paddingRight: '32px',
+                borderRight: i < stats.length - 1 ? '1px solid rgba(27,36,40,0.1)' : 'none',
               }}
             >
               <div
@@ -231,7 +187,7 @@ export default function Hero() {
                 style={{
                   fontFamily: 'var(--font-primary)',
                   fontSize: '0.9rem',
-                  color: 'rgba(255,255,255,0.55)',
+                  color: 'rgba(27,36,40,0.55)',
                   letterSpacing: '0.02em',
                 }}
               >
@@ -240,7 +196,6 @@ export default function Hero() {
             </div>
           ))}
         </div>
-      </div>
       </div>
     </section>
   )

@@ -18,7 +18,7 @@ const logos = [
   { src: '/logos/clients/vf-corporation.png',   alt: 'VF Corporation',  height: '72px'  },
 ]
 
-const track = [...logos, ...logos]
+const track = [...logos, ...logos, ...logos]
 
 export default function LogoBar() {
   useScrollReveal()
@@ -26,18 +26,19 @@ export default function LogoBar() {
   return (
     <section
       style={{
-        background: 'var(--color-navy)',
-        paddingTop: '80px',
-        paddingBottom: '80px',
+        display: 'block',
+        background: '#EFF4F7',
+        paddingTop: '60px',
+        paddingBottom: '60px',
         overflow: 'hidden',
-        borderTop: '1px solid rgba(255,255,255,0.08)',
-        borderBottom: '1px solid rgba(255,255,255,0.08)',
+        borderTop: '1px solid rgba(27,36,40,0.08)',
+        borderBottom: '1px solid rgba(27,36,40,0.08)',
       }}
     >
       <style dangerouslySetInnerHTML={{ __html: `
-        @keyframes scroll {
+        @keyframes marquee {
           from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
+          to   { transform: translateX(-33.3333%); }
         }
       `}} />
 
@@ -49,7 +50,7 @@ export default function LogoBar() {
             fontSize: 'clamp(2.25rem, 4vw, 3.25rem)',
             fontWeight: 700,
             letterSpacing: '-0.02em',
-            color: 'var(--color-white)',
+            color: 'var(--color-navy)',
             marginBottom: '0.625rem',
           }}
         >
@@ -60,7 +61,7 @@ export default function LogoBar() {
           style={{
             fontFamily: 'var(--font-primary)',
             fontSize: '1.0625rem',
-            color: 'rgba(255,255,255,0.6)',
+            color: 'rgba(27,36,40,0.7)',
             lineHeight: 1.75,
           }}
         >
@@ -72,6 +73,7 @@ export default function LogoBar() {
       <div
         style={{
           overflow: 'hidden',
+          width: '100%',
           WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
           maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
         }}
@@ -81,7 +83,7 @@ export default function LogoBar() {
             display: 'flex',
             alignItems: 'center',
             width: 'max-content',
-            animation: 'scroll 40s linear infinite',
+            animation: 'marquee 50s linear infinite',
             willChange: 'transform',
           }}
         >
@@ -93,7 +95,7 @@ export default function LogoBar() {
                 height: '160px',
                 display: 'flex',
                 alignItems: 'center',
-                paddingRight: '160px',
+                paddingRight: '100px',
               }}
             >
               <img
@@ -106,7 +108,7 @@ export default function LogoBar() {
                   maxWidth: '200px',
                   objectFit: 'contain',
                   display: 'block',
-                  filter: 'brightness(0) invert(1)',
+                  filter: 'none',
                 }}
               />
             </div>
