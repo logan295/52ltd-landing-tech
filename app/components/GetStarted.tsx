@@ -116,7 +116,7 @@ export default function GetStarted() {
               letterSpacing: '-0.02em',
             }}
           >
-            Ready to meet your next creative hire?
+            Ready to meet your next engineering hire?
           </h2>
           <p
             className="reveal"
@@ -129,7 +129,7 @@ export default function GetStarted() {
               lineHeight: 1.65,
             }}
           >
-            No commitment. Just a conversation with a recruiter who understands brand and design.
+            No commitment. Just a conversation with a recruiter who understands engineering teams.
           </p>
 
           <div
@@ -239,7 +239,7 @@ export default function GetStarted() {
                     id="role"
                     type="text"
                     list="roles"
-                    placeholder="e.g. UX Researcher, Product Designer..."
+                    placeholder="e.g. Software Engineer, DevOps Engineer..."
                     className="gs-input"
                     style={inputStyle}
                     value={form.role}
@@ -247,16 +247,16 @@ export default function GetStarted() {
                     onBlur={(e) => { e.currentTarget.style.borderColor = errors.role ? '#FC8181' : 'rgba(27,36,40,0.15)' }}
                   />
                   <datalist id="roles">
-                    <option value="Art Director" />
-                    <option value="Brand Designer" />
-                    <option value="Creative Director" />
-                    <option value="Motion Designer" />
-                    <option value="Graphic Designer" />
-                    <option value="Visual Designer" />
-                    <option value="Design Strategist" />
-                    <option value="Content Designer" />
-                    <option value="Illustrator" />
-                    <option value="Production Designer" />
+                    <option value="Software Engineer" />
+                    <option value="Frontend Engineer" />
+                    <option value="Backend Engineer" />
+                    <option value="Full Stack Engineer" />
+                    <option value="DevOps Engineer" />
+                    <option value="Engineering Manager" />
+                    <option value="Staff Engineer" />
+                    <option value="Platform Engineer" />
+                    <option value="Cloud Architect" />
+                    <option value="Data Engineer" />
                     <option value="Other" />
                   </datalist>
                   {errors.role && <p style={errorStyle}>{errors.role}</p>}

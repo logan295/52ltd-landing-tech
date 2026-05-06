@@ -3,16 +3,16 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const roles = [
-  'Art Director',
-  'Brand Designer',
-  'Creative Director',
-  'Motion Designer',
-  'Graphic Designer',
-  'Visual Designer',
-  'Design Strategist',
-  'Content Designer',
-  'Illustrator',
-  'Production Designer',
+  'Software Engineer',
+  'Frontend Engineer',
+  'Backend Engineer',
+  'Full Stack Engineer',
+  'DevOps Engineer',
+  'Engineering Manager',
+  'Staff Engineer',
+  'Platform Engineer',
+  'Cloud Architect',
+  'Data Engineer',
 ]
 
 const stats = [
@@ -44,7 +44,7 @@ export default function Hero() {
             className="reveal section-label"
             style={{ fontFamily: 'var(--font-primary)', fontSize: '0.875rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-blue)', marginBottom: '20px', display: 'block' }}
           >
-            Brand &amp; Creative Talent
+            Technology &amp; Engineering Talent
           </p>
 
           <h1
@@ -59,8 +59,8 @@ export default function Hero() {
               maxWidth: '760px',
             }}
           >
-            Build the design team<br />
-            <span style={{ color: '#1B2428' }}>your brand deserves.</span>
+            Build the engineering team<br />
+            <span style={{ color: '#1B2428' }}>your product needs.</span>
           </h1>
 
           <p
@@ -74,7 +74,7 @@ export default function Hero() {
               maxWidth: '520px',
             }}
           >
-            52 Limited places Art Directors, Brand Designers, and Creative Directors with companies building world-class in-house creative teams. Boutique. Senior-led. Nationally.
+            52 Limited places Software Engineers, DevOps leads, and Engineering Managers with companies scaling world-class technical teams. Boutique. Senior-led. Nationally.
           </p>
 
           <div

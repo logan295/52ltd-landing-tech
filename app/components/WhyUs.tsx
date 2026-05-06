@@ -179,7 +179,7 @@ export default function WhyUs() {
                 margin: 0,
               }}
             >
-              Built for brands that take design<br />seriously.
+              Built for engineering teams that scale.
             </h2>
           </div>
           <p
@@ -193,7 +193,7 @@ export default function WhyUs() {
               margin: 0,
             }}
           >
-            We built 52 Limited for the companies that know design is a competitive advantage. Our recruiters understand brand craft, creative culture, and what makes a design team exceptional.
+            We built 52 Limited for the teams that know great engineering is a competitive advantage. Our recruiters understand technical hiring, not just job titles.
           </p>
         </div>
 

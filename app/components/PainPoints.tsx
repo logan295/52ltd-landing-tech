@@ -6,18 +6,18 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 const cards = [
   {
     number: '01',
-    headline: 'Your agency work is outpacing your in-house team',
-    body: 'Growing brands need internal creative talent that moves as fast as the business. We place designers who thrive in fast-moving, brand-driven environments.',
+    headline: 'Your pipeline is full of the wrong candidates',
+    body: 'Job boards flood you with volume. We deliver 3-5 vetted engineers who are actually qualified, culture-fit, and ready to move.',
   },
   {
     number: '02',
-    headline: 'You need a Creative Director, not just a designer',
-    body: 'Senior creative leadership is the hardest search. Every candidate we send has been vetted for strategic thinking, craft, and team leadership — not just portfolio quality.',
+    headline: 'You need senior, not just experienced',
+    body: 'Years in the industry doesn\'t mean senior-level thinking. We assess systems design, ownership mentality, and technical depth — not just resume keywords.',
   },
   {
     number: '03',
-    headline: 'The last hire didn\'t match the brand culture',
-    body: 'Creative fit is everything. Our process includes brand sensibility assessment, work style evaluation, and culture alignment — before you ever see a portfolio.',
+    headline: 'Your last search took four months',
+    body: 'Slow searches cost you product velocity. Our average time from intake to offer is 2-3 weeks.',
   },
 ]
 
